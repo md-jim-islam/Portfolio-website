@@ -1,0 +1,402 @@
+
+@media (max-width: 768px) {
+  
+  /* Navigation */
+  nav {
+    position: relative;
+    background: var(--neutral-50);
+    backdrop-filter: none;
+  }
+
+  .logo img {
+    width: 24px;
+  }
+
+  .logo h3 {
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  .navLinks {
+    position: absolute;
+    flex-direction: column;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    scale: 0;
+    padding-bottom: 13px;
+    transition: 0.6s;
+    pointer-events: none;
+  }
+
+  .navLinks.active {
+    pointer-events: auto;
+    scale: 1;
+    background: var(--gray-100);
+  }
+
+  .navLink:first-child {
+    margin-top: 0.7rem;
+  }
+
+  .navLink {
+    max-width: max-content;
+    font-size: 13px;
+    margin-left: 13px;
+    font-weight: 700;
+  }
+
+  .hamburger {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .hamburger-div {
+    width: 25px;
+    border-radius: 40vh;
+    height: 2.5px;
+    background: #000;
+  }
+
+  /* Hero Section */
+  .hero-area {
+    flex-direction: column;
+    margin-top: 90px;
+    padding: 0 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-img {
+    order: 1;
+    max-width: 100%;
+    margin: auto;
+    margin-bottom: 3vh;
+  }
+
+  .about-img img {
+    width: 260px;
+    height: 260px;
+    object-fit: cover;
+  }
+
+  .about-info {
+    order: 2;
+    max-width: 100%;
+    text-align: left;
+    margin-left: -30px;
+  }
+
+  .about-info h2 {
+    font-size: 30px;
+    font-size: x-large;
+    line-height: 0.8;
+  }
+
+  .about-info h3 {
+    font-size: 20px;
+    line-height: 0.8;
+    background-image: linear-gradient(30deg, blue, deeppink);
+  }
+
+  .about-info h4 {
+    margin-top: -4px;
+    font-size: 16px;
+    line-height: 0.8;
+  }
+
+  .about-info p {
+    font-size: 14px;
+    margin-top: -4px;
+  }
+
+  .hero-btn {
+    padding-top: 17px;
+  }
+
+  .contactMe,
+  .hireMe {
+    padding: 12px 17px;
+    border-radius: 6024rem;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    font-variant: small-caps;
+  }
+
+  .contactMe {
+    background: var(--gray-300);
+    color: var(--blue-600);
+    transition: 0.7s;
+  }
+
+  .contactMe:hover {
+    color: var(--amber-100);
+    background: var(--gray-500);
+  }
+
+  .hireMe {
+    background: var(--gray-500);
+    color: var(--amber-100);
+    transition: 0.7s;
+  }
+
+  .hireMe:hover {
+    background: var(--gray-300);
+    color: var(--blue-600);
+  }
+
+  .developerImg {
+    display: none;
+  }
+
+  /* About Section */
+  .about-parent {
+    flex-direction: column;
+  }
+
+  .about-title h1 {
+    font-size: 28px;
+  }
+
+  .info {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .skill-container {
+    max-width: 92%;
+    width: 92%;
+    margin: auto;
+  }
+
+  /* Services Section */
+  .what-I-Do-Section-Title h1 {
+    font-size: 23px;
+    margin-bottom: 13px;
+  }
+
+  .what-I-Do-Section-Title h4 {
+    font-size: 10px;
+    margin-bottom: -0.2px;
+  }
+
+  .what-I-Do-Section-Parent {
+    flex-direction: column;
+  }
+
+  .what-I-Do-Section-Child {
+    width: 93%;
+    margin: 4px auto;
+    margin-top: 2vh;
+    border-radius: 7px;
+    border: 2px solid #ef4444;
+  }
+
+  .what-I-Do-Section-Child h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .what-I-Do-Section-Child p {
+    text-align: center;
+    font-size: 13px;
+  }
+
+  .what-I-Do-Section-Child a {
+    text-align: center;
+    font-size: 12px;
+    padding-top: 10px;
+  }
+
+  .what-I-Do-Section-Child a::after {
+    height: 1px;
+    background: blue;
+  }
+
+  /* Project Section */
+  .project-section-parent {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-section-Title h3 {
+    font-size: 25px;
+  }
+
+  .project-section-child {
+    width: 87%;
+    filter: brightness(0.9);
+  }
+
+  .project-section-child h1 {
+    font-size: 17px;
+  }
+
+  .project-section-child p {
+    font-size: 10px;
+    font-weight: 700;
+  }
+
+  .filter-btn {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: var(--yellow-900);
+  }
+
+  .projectcard h1 {
+    font-size: 20px;
+    color: var(--gray-950);
+    font-family: sans-serif;
+  }
+
+  .projectcard p {
+    font-size: 10px;
+    color: var(--gray-400);
+  }
+
+  .cardInfo h1 {
+    color: gold;
+  }
+
+  /* Contact Section */
+  .contact-section-title {
+    margin-top: 3vh;
+  }
+
+  .contact-section-title h2 {
+    font-size: 26px;
+  }
+
+  .contact-section-title h4 {
+    font-size: 13px;
+  }
+
+  #contact-section {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+
+  .contact-section-parent {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .contact-section-child {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 99%;
+    padding: 10px;
+  }
+
+  .contact-section-child input,
+  .contact-section-child textarea {
+    width: 100%;
+    margin: 4px auto;
+    outline: none;
+    padding: 10px;
+    background: #272727;
+    border: none;
+    box-shadow: 0 0 2px gold inset;
+    caret-color: #05ffe8;
+    color: #fff;
+    transition: 0.7s;
+    font-weight: bold;
+  }
+
+  .contact-section-child input::placeholder,
+  .contact-section-child textarea::placeholder {
+    color: #ffd;
+    font-size: 11px;
+    font-weight: normal;
+  }
+
+  .contact-section-child input {
+    height: 35px;
+    border-radius: 6px;
+  }
+
+  .contact-section-child textarea {
+    height: 88px;
+    border-radius: 6px;
+  }
+
+  .contact-section-child div {
+    width: 30%;
+    text-align: center;
+    margin-top: 1vh;
+  }
+
+  .send-btn {
+    padding: 5px 40px;
+    font-size: 16px;
+  }
+
+  .contact-title h1 {
+    font-size: 30px;
+  }
+
+  .contact-form {
+    width: 100%;
+    margin-top: 23px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+  }
+
+  .form-btn {
+    width: 100%;
+  }
+
+  .form-btn button {
+    color: var(--gray-500);
+  }
+
+  /* Footer Section */
+  .newsLetter-footer {
+    flex-direction: column;
+  }
+
+  .newsLetter-footer input::placeholder {
+    font-size: 14px;
+  }
+
+  .newsLetter-footer button {
+    font-size: 14px;
+  }
+
+  .footer-bottom-parent {
+    flex-direction: column;
+  }
+
+  .footer-bottom-child.links {
+    margin: auto 0;
+  }
+
+  .footer-bottom-child.p {
+    margin: auto 0;
+  }
+
+  .title-footer h1 {
+    font-size: 23px;
+  }
+
+  .paragraph-footer {
+    font-size: 13px;
+  }
+
+  .Links-footer {
+    font-size: 13px;
+  }
+
+  .icon-links-footer a svg {
+    width: 15px;
+  }
+}
